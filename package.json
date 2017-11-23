@@ -1,0 +1,25 @@
+{
+  "name": "oenator",
+  "version": "1.0.0",
+  "description": "Associate OEN with Spriden",
+  "main": "script.js",
+  "dependencies": {
+    "JSONStream": "^1.0.6",
+    "body-parser": "^1.14.1",
+    "connect": "^3.4.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "install": "^0.3.0",
+    "nodemon": "^1.8.1",
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "request": "^2.66.0",
+    "xmldom": "^0.1.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node script.js"
+  },
+  "author": "Tariq",
+  "license": "ISC"
+}

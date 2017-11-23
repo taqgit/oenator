@@ -1,0 +1,57 @@
+<div>
+    <div class="container-fluid">
+        <!-- Content Header (Page header) -->
+        <section class="content-header"></section>
+        <!-- Main content -->
+        <section class="content">
+            <form name="oenform" id="oenform" method="POST">
+                <div class="container" ng-cloak>
+                    <div class="row">
+                        <div class="span4 offset4 well">
+                            <legend>Humber PFIS Assistance &#8211; Update OEN in the File</legend>
+                            <div class="row">
+                                <div class="span4 offset4 well">
+                                    <label for="file">Master Text File</label>
+
+                                    <div class="row">
+                                        <div class="span4 offset4 well">
+                                            <div class="form-group">
+                                                <input type="file" name="file" accept="text/*" filechange="uploadtxt()"
+                                                       ng-model="file" class="center-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4 offset4 well">
+                                    <label for="xmlfile">Replacement XML File</label>
+
+                                    <div class="row">
+                                        <div class="span4 offset4 well">
+                                            <div class="form-group">
+                                                <input type="file" name="xmlfile" accept="text/*"
+                                                       filechange="uploadxml()" ng-model="xmlfile" class="center-block"
+                                                       ng-disabled="!file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span4 offset4 well">
+                            <a target="_self" href="http://localhost:3000/oenator/downloadOenFile"
+                               download="oenated.xml" class="btn btn-primary center-block"
+                               ng-disabled="!file || !xmlfile || !done" ng-click="done=false"> Download OENated XML </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.container -->
+</div>

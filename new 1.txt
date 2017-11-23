@@ -1,0 +1,16 @@
+echo 'export PATH=/u01/app/nodejs/local/bin:$PATH' >> ~/.bashrc
+. ~/.bashrc
+cd ~/node-latest-install
+curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+./configure --prefix=../local
+make install # ok, fine, this step probably takes more than 30 seconds...
+curl https://www.npmjs.org/install.sh | sh
+
+
+
+root =/u01/app/nodejs/local//lib/node_modules
+binroot=/u01/app/nodejs/local/bin
+manroot =/u01/app/nodejs/local/share/man
+
+
+./configure --prefix=/u01/app/nodejs/local

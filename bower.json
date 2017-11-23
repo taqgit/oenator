@@ -1,0 +1,25 @@
+{
+  "name": "oenator",
+  "description": "Associate OEN with Spriden",
+  "main": "script.js",
+  "authors": [
+    "Tariq"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "install": "~1.0.4",
+    "ng-file-upload": "~10.0.2",
+    "bootstrap": "~3.3.5"
+  }
+}
